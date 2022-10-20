@@ -3,6 +3,7 @@ word = str(input('Введите слово с маленькими буквам
 wordlist = list (word) #разбивает слово на список
 shift = int(input('Введите желаемый сдвиг: ')) #сдвиг
 k = 0
+c = 0
 result = []
 for i in ABC:
     if k > len(word) - 1:
