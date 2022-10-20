@@ -1,17 +1,17 @@
 ABC = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя'
-try:
-            word = str(input('Введите слово с маленькими буквами: ')) #слово
-            return b
-        except ValueError:
-            print("Нужно ввести букву")
-
-wordlist = list (word) #разбивает слово на список
-try:
+def shift_chek():  # обработчик ошибки ввода сдвига
+    while True:
+        try:
             shift = int(input('Введите желаемый сдвиг: ')) #сдвиг
-            return b
+            return shift
         except ValueError:
             print("Нужно ввести цифру")
 
+
+word = str(input('Введите предложение или слово буквами: ')) #пользователь вводит слово или предложение
+word = word.lower()
+shift = shift_chek()
+wordlist = list (word) #разбивает слово на список
 k = 0
 result = [] #создаем массив результатов
 for i in ABC:
