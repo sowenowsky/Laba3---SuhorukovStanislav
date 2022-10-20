@@ -6,7 +6,12 @@ try:
             print("Нужно ввести букву")
 
 wordlist = list (word) #разбивает слово на список
-shift = int(input('Введите желаемый сдвиг: ')) #сдвиг
+try:
+            shift = int(input('Введите желаемый сдвиг: ')) #сдвиг
+            return b
+        except ValueError:
+            print("Нужно ввести цифру")
+
 k = 0
 result = [] #создаем массив результатов
 for i in ABC:
