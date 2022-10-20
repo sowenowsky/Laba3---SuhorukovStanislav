@@ -1,10 +1,14 @@
 ABC = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя'
-word = str(input('Введите слово с маленькими буквами: ')) #слово
+try:
+            word = str(input('Введите слово с маленькими буквами: ')) #слово
+            return b
+        except ValueError:
+            print("Нужно ввести букву")
+
 wordlist = list (word) #разбивает слово на список
 shift = int(input('Введите желаемый сдвиг: ')) #сдвиг
 k = 0
-c = 0
-result = []
+result = [] #создаем массив результатов
 for i in ABC:
     if k > len(word) - 1:
         break
